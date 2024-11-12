@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav id="nav">
+          <div id="logo">
+            <a href="#"
+              ><img width="50px" src="images/logo-modified.png" alt=""
+            /></a>
+          </div>
+          <ul>
+            <div id="hidden-nav-items">
+              <li><a class="left" href="#about-me">About</a></li>
+
+              <li><a class="left" href="#projects-section">Projects</a></li>
+              <li><a class="left" href="#skills-container">Skills</a></li>
+              <li><a class="left" href="#contact-section">Contact</a></li>
+            </div>
+
+            <li id="hamburger-menu">
+              <svg
+                id="cross-icon"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24.00 24.00"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M16 8L8 16M8.00001 8L16 16"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                id="menu-icon"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+                transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M20 7L4 7"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M20 12L4 12"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M20 17L4 17"
+                    stroke="#ffffff"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div
+        id="hidden-nav-container"
+        style="
+          position: sticky;
+          top: 0%;
+          z-index: 1;
+          display: flex;
+          justify-content: end;
+        "
+      >
+        <div id="hidden-nav">
+          <ul>
+            <li><a class="left" href="#about-me">About</a></li>
+
+            <li><a class="left" href="#projects-section">Projects</a></li>
+            <li><a class="left" href="#skills-container">Skills</a></li>
+            <li><a class="left" href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <section
+        id="hero"
+        class="animate__animated animate__fadeIn"
+        onscroll="handleScroll()"
+      >
+        <img
+          id="profile-pic"
+          width="150px"
+          src="images/cropped_image.png"
+          alt=""
+        />
+        <h1>
+          <span>I'm Harmanpreet Singh,</span>frontend <br />
+          developer based in India.
+        </h1>
+
+        <p>
+          Building beautiful, functional, and scalable web applications <br />
+          with modern technologies.
+        </p>
+        <div id="btn-container">
+          <a href="#contact-section"
+            ><button class="btn" id="contact-me">Contact Me</button></a
+          >
+          <a
+            href="https://drive.google.com/file/d/1Xw6Phda4dbjFI7JQJAtlI7ysqUlpw2aY/view?usp=sharing"
+          >
+            <button class="btn view-projects" id="view-projects">
+              My resume
+            </button>
+          </a>
+        </div>
+        <div id="social-icons">
+          <span>
+            <a href="https://github.com/geekharman003" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                ></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg> </a
+          ></span>
+          <span>
+            <a
+              href="https://www.linkedin.com/in/harmanpreet-singh-7b8701230/"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </span>
+          <span>
+            <a href="mailto:harmansadhra2003@gmail.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </section>
+      <section id="about-me">
+        <h2
+          style="
+            font-size: 4rem;
+            border-bottom: 5px solid transparent;
+            border-image: linear-gradient(to right, #f32170, #ff6b08);
+            border-image-slice: 1;
+          "
+        >
+          About Me
+        </h2>
+
+        <div id="about-me-content">
+          <h3>Hello👋,I'm Harmanpreet Singh</h3>
+          <!-- <br /> -->
+          <p>📍Anandpur Sahib,Punjab</p>
+          <!-- <br> -->
+          I am a Aspiring Software Developer with over a 3 months of experience
+          in this domain.
+          <br />Throughout my college, i constantly learning new things. I have
+          a Good Understanding of Frontend Technologies and i am constantly
+          upgrading myself with new skills. <br />If You have any query then
+          feel free to reach out to me.
+          <br />
+          <br />
+          <h3>Core Strengths</h3>
+          <br />
+          <div id="core-strength-container">
+            <span class="core-strengths">Problem Solver</span>
+            <span class="core-strengths">Continuous Learner</span>
+            <span class="core-strengths">Tech Enthusiast</span>
+            <span class="core-strengths">Creative Thinker</span>
+          </div>
+        </div>
+      </section>
+      <section id="skills-container">
+        <h2
+          style="
+            font-size: 4rem;
+            border-bottom: 5px solid transparent;
+            margin-bottom: 10px;
+            border-image: linear-gradient(to right, #f32170, #ff6b08);
+            border-image-slice: 1;
+          "
+        >
+          Skills 🥷
+        </h2>
+        <div id="skills-content">
+          <div id="programming-skills">
+            <h2>Programming Skills</h2>
+            <span
+              ><svg
+                class="skills-icon"
+                fill="#36c36a"
+                width="100px"
+                height="100px"
+                viewBox="-2.4 -2.4 28.80 28.80"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#36c36a"
+                stroke-width="0.00024000000000000003"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="0.096"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <title>HackerRank icon</title>
+
+                  <path
+                    d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701c.141 0 .254-.115.254-.258 0-.094-.049-.176-.123-.221L9.223 4.92c-.049-.063-.141-.109-.226-.109-.084 0-.16.045-.207.107L7.11 6.43c-.072.045-.12.126-.12.218 0 .143.113.258.255.258h.704l.008 10.035c0 .145.111.258.254.258h1.492c.142 0 .259-.115.259-.256v-4.004h4.073v4.152h-.699c-.143 0-.256.115-.256.258 0 .092.048.174.119.219l1.579 1.51c.044.061.141.109.225.109.085 0 .159-.045.208-.109l1.679-1.51c.072-.045.12-.127.12-.219 0-.143-.115-.258-.255-.258h-.704l-.007-10.034c0-.145-.114-.26-.255-.26h-1.494v.002z"
+                  />
+                </g></svg
+            ></span>
+            <span
+              ><svg
+                class="skills-icon"
+                width="100px"
+                height="100px"
+                viewBox="-1.6 -1.6 35.20 35.20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M27.6947 22.9999C27.883 22.6617 28 22.2807 28 21.9385V10.0613C28 9.71913 27.8831 9.33818 27.6947 9L16 16L27.6947 22.9999Z"
+                    fill="#00599C"
+                  />
+                  <path
+                    d="M17.0395 29.7433L26.9611 23.8047C27.2469 23.6336 27.5067 23.3382 27.695 23L16.0003 16L4.30566 23C4.49398 23.3382 4.75382 23.6337 5.03955 23.8047L14.9611 29.7433C15.5326 30.0855 16.468 30.0855 17.0395 29.7433Z"
+                    fill="#004482"
+                  />
+                  <path
+                    d="M27.6947 8.99996C27.5064 8.6617 27.2465 8.36629 26.9608 8.19521L17.0392 2.25662C16.4677 1.91446 15.5323 1.91446 14.9608 2.25662L5.03922 8.19521C4.46761 8.53729 4 9.37709 4 10.0613V21.9386C4 22.2807 4.11694 22.6618 4.30533 23L16 16L27.6947 8.99996Z"
+                    fill="#659AD2"
+                  />
+                  <path
+                    d="M16.0385 24C11.6061 24 8 20.4112 8 16C8 11.5888 11.6061 8 16.0385 8C18.8458 8 21.4674 9.47569 22.919 11.8618L19.4765 13.9265C18.7492 12.736 17.4399 12 16.0385 12C13.8222 12 12.0193 13.7944 12.0193 16C12.0193 18.2056 13.8222 20 16.0385 20C17.4362 20 18.7421 19.2681 19.4707 18.0832L22.9205 20.1359C21.4692 22.5234 18.8467 24 16.0385 24Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M23 15.4948H21.9999V14.5H21.0001V15.4948H20V16.4895H21.0001V17.4844H21.9999V16.4895H23V15.4948Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M27 15.5H25.9999V14.5H25.0001V15.5H24V16.4999H25.0001V17.5H25.9999V16.4999H27V15.5Z"
+                    fill="white"
+                  />
+                </g></svg
+            ></span>
+          </div>
+          <div id="frontend-skills">
+            <h2>Frontend</h2>
+            <span
+              ><svg
+                class="skills-icon"
+                width="100px"
+                height="100px"
+                viewBox="-1.6 -1.6 35.20 35.20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" />
+                  <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" />
+                  <path
+                    d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+                    fill="white"
+                  />
+                </g></svg
+            ></span>
+            <span>
+              <svg
+                class="skills-icon"
+                width="100px"
+                height="100px"
+                viewBox="-1.6 -1.6 35.20 35.20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8" />
+                  <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD" />
+                  <path
+                    d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span>
+              <svg
+                class="skills-icon"
+                width="100px"
+                height="100px"
+                viewBox="-1.6 -1.6 35.20 35.20"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#363030"
+                stroke="#363030"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <title>file_type_js_official</title>
+
+                  <rect
+                    x="2"
+                    y="2"
+                    width="28"
+                    height="28"
+                    style="fill: #f5de19"
+                  />
+
+                  <path
+                    d="M20.809,23.875a2.866,2.866,0,0,0,2.6,1.6c1.09,0,1.787-.545,1.787-1.3,0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964,0-1.973,1.5-3.476,3.853-3.476a3.889,3.889,0,0,1,3.742,2.107L25,18.128A1.789,1.789,0,0,0,23.311,17a1.145,1.145,0,0,0-1.259,1.128c0,.789.489,1.109,1.618,1.6l.658.282c2.236.959,3.5,1.936,3.5,4.133,0,2.369-1.861,3.667-4.36,3.667a5.055,5.055,0,0,1-4.795-2.691Zm-9.295.228c.413.733.789,1.353,1.693,1.353.864,0,1.41-.338,1.41-1.653V14.856h2.631v8.982c0,2.724-1.6,3.964-3.929,3.964a4.085,4.085,0,0,1-3.947-2.4Z"
+                  />
+                </g>
+              </svg>
+            </span>
+            <span>
+              <svg
+                class="skills-icon"
+                width="95px"
+                height="95px"
+                viewBox="-12.8 -12.8 281.60 281.60"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z"
+                      fill="#563D7C"
+                    ></path>
+                    <path
+                      d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div id="other-skills">
+            <h2>Other</h2>
+            <span>
+              <svg
+                class="skills-icon"
+                width="100px"
+                height="100px"
+                viewBox="-1 -1 22.00 22.00"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <title>github [#142]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-140.000000, -7559.000000)"
+                      fill="#ffffff"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                          id="github-[#142]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <span>
+              <svg
+                class="skills-icon"
+                width="100px"
+                height="100px"
+                viewBox="-1.6 -1.6 35.20 35.20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M0 10V20H9V22H16V20H32V10H0Z" fill="#CB3837" />
+                  <path
+                    d="M5.46205 12H2V18H5.46205V13.6111H7.22344V18H8.98482V12H5.46205ZM10.7462 12V20H14.269V18H17.731V12H10.7462ZM15.9696 16.3889H14.269V13.6111H15.9696V16.3889ZM22.9545 12H19.4924V18H22.9545V13.6111H24.7158V18H26.4772V13.6111H28.2386V18H30V12H22.9545Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="projects-section">
+        <h2
+          style="
+            font-size: 4rem;
+            border-bottom: 5px solid transparent;
+            margin-bottom: 10px;
+            border-image: linear-gradient(to right, #f32170, #ff6b08);
+            border-image-slice: 1;
+          "
+        >
+          My latest projects🎯
+        </h2>
+        <div id="projects-container">
+          <div class="project project-one">
+            <img src="images/Tic-Tac-Toe.png" alt="" />
+            <div class="project-body">
+              <h3 style="font-size: 1.8rem; margin-bottom: 5px">
+                TicTacToe Game
+              </h3>
+              <p style="font-size: inherit">
+                A Classic TicTac Game built using HTML,CSS,Javascript.
+              </p>
+              <div class="technologies-used">
+                <div class="technology-name">HTML</div>
+                <div class="technology-name">CSS</div>
+                <div class="technology-name">JavaScript</div>
+              </div>
+              <div class="links" style="font-size: 1.2rem">
+                <div class="github">
+                  <span>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://github.com/geekharman003/TicTacToe"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-github"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                      >Code</a
+                    ></span
+                  >
+                </div>
+                <div class="deploy">
+                  <div>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://tic-tac-toe-netlifyy.netlify.app/"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-external-link"
+                      >
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14 21 3"></path>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                      </svg>
+                      Link
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project project-three">
+            <img src="images/weather-app.png" alt="" />
+            <div class="project-body">
+              <h3 style="font-size: 1.8rem; margin-bottom: 5px">Weather App</h3>
+              <p style="font-size: inherit">
+                Minimalistic Weather App which gives you weahter data of all
+                locations.
+              </p>
+              <div class="technologies-used">
+                <div class="technology-name">HTML</div>
+                <div class="technology-name">CSS</div>
+                <div class="technology-name">JavaScript</div>
+                <div class="technology-name">OpenWeatherMap Api</div>
+              </div>
+              <div class="links" style="font-size: 1.2rem">
+                <div class="github">
+                  <span>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://github.com/geekharman003/weather-web-app"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-github"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                      >Code</a
+                    ></span
+                  >
+                </div>
+                <div class="deploy">
+                  <div>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://weather-web-app-netlify.netlify.app/"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-external-link"
+                      >
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14 21 3"></path>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                      </svg>
+                      Link
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project project-four">
+            <img src="images/moshified.png" alt="" />
+            <div class="project-body">
+              <h3 style="font-size: 1.8rem; margin-bottom: 5px">Moshify</h3>
+              <p style="font-size: inherit">
+                Designed Responsive Landing Page of a hosting website.
+              </p>
+              <div class="technologies-used">
+                <div class="technology-name">HTML</div>
+                <div class="technology-name">CSS</div>
+                <div class="technology-name">JavaScript</div>
+                <div class="technology-name">Animation Scroll Library</div>
+              </div>
+              <div class="links" style="font-size: 1.2rem">
+                <div class="github">
+                  <span>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://github.com/geekharman003/Moshify"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-github"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                      >Code</a
+                    ></span
+                  >
+                </div>
+                <div class="deploy">
+                  <div>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://moshify-demo-site1.netlify.app/"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-external-link"
+                      >
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14 21 3"></path>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                      </svg>
+                      Link
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project project-two">
+            <img src="images/Calculator.png" alt="" />
+            <div class="project-body">
+              <h3 style="font-size: 1.8rem; margin-bottom: 5px">
+                Calculator App
+              </h3>
+              <p style="font-size: inherit">
+                A simple Calculator whiich is useful for all types of
+                Calculations.
+              </p>
+              <div class="technologies-used">
+                <div class="technology-name">HTML</div>
+                <div class="technology-name">CSS</div>
+                <div class="technology-name">JavaScript</div>
+              </div>
+              <div class="links" style="font-size: 1.2rem">
+                <div class="github">
+                  <span>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://github.com/geekharman003/Calculator"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-github"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        ></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                      >Code</a
+                    ></span
+                  >
+                </div>
+                <div class="deploy">
+                  <div>
+                    <a
+                      style="display: flex; align-items: center; gap: 2px"
+                      href="https://calculator-app-netlifyy.netlify.app/"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-external-link"
+                      >
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14 21 3"></path>
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                      </svg>
+                      Link
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>And Many More..</h2>
+      </section>
+      <section id="contact-section">
+        <h2
+          style="
+            font-size: 4rem;
+            border-bottom: 5px solid transparent;
+            border-image: linear-gradient(to right, #f32170, #ff6b08);
+            border-image-slice: 1;
+          "
+        >
+          Get In Touch 🤙
+        </h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          onsubmit="handleSubmit()"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="3cd8a1e4-dfa8-438c-aa06-7be1e4d34696"
+          />
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" cols="10"></textarea>
+          <button type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-send"
+            >
+              <path d="m22 2-7 20-4-9-9-4Z"></path>
+              <path d="M22 2 11 13"></path>
+            </svg>
+            Send Message
+          </button>
+        </form>
+      </section>
+      <footer>
+        <p>
+          &copy; 2024 All rights reserved.
+          <br />
+          Made with <span>❤️</span> By Harman
+        </p>
+      </footer>
+      <div id="scroll-to-top" onclick="scrollToTop()">
+        <svg
+          height="50px"
+          width="50px"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+          fill="#ffffff"
+          stroke="#ffffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <g id="SVGRepo_iconCarrier">
+            <path
+              style="fill: #fc5b31"
+              d="M256,0C114.608,0,0,114.608,0,256c0,141.376,114.608,256,256,256s256-114.624,256-256 C512,114.608,397.392,0,256,0z"
+            />
+            <path
+              style="fill: #fff"
+              d="M392.4,364.608L256,277.12l-136.4,87.472L256,80.304L392.4,364.608z"
+            />
+          </g>
+        </svg>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
