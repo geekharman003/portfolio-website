@@ -235,6 +235,7 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 5rem;
 }
 
@@ -247,6 +248,7 @@ h1{
 
 #core-strength-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -282,13 +284,19 @@ h1{
 
 #programming-skills {
   /* border-bottom: 2px dotted rgb(223, 80, 48); */
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 #frontend-skills {
   /* border-bottom: 2px dotted rgb(223, 80, 48); */
+  text-align: center;
   margin-bottom: 2rem;
+}
+
+#other-skills{
+text-align: center;
 }
 
 .skills-icon {
