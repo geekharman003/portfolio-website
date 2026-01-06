@@ -99,7 +99,7 @@ ul li {
   transition: all 0.2s;
 }
 
-ul li:hover{
+ul li:hover {
   transform: scale(1.2);
   /* font-size: 2rem; */
 }
@@ -158,8 +158,7 @@ ul li:hover{
   border-radius: 50%;
 }
 
-
-h1{
+h1 {
   font-size: 6rem;
 }
 
@@ -289,14 +288,15 @@ h1{
   margin-bottom: 2rem;
 }
 
-#frontend-skills {
+#frontend-skills,
+#backend-skills {
   /* border-bottom: 2px dotted rgb(223, 80, 48); */
   text-align: center;
   margin-bottom: 2rem;
 }
 
-#other-skills{
-text-align: center;
+#other-skills {
+  text-align: center;
 }
 
 .skills-icon {
@@ -441,9 +441,9 @@ footer {
   /* html {
     font-size: 50%;
   } */
-   h1{
+  h1 {
     font-size: 5rem;
-   }
+  }
   #hidden-nav-items {
     display: none;
   }
